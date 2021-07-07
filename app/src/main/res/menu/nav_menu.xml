@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/ic_transfer"
+        android:icon="@drawable/ic_transfer"
+        android:title="Transfer"/>
+
+    <item
+        android:id="@+id/ic_payment"
+        android:icon="@drawable/ic_payment"
+        android:title="Payment"/>
+
+    <item
+        android:id="@+id/ic_saving"
+        android:icon="@drawable/ic_saving"
+        android:title="Saving"/>
+
+    <item
+        android:id="@+id/ic_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu"/>
+
+</menu>

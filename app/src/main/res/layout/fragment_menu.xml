@@ -19,14 +19,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="50dp"
-            android:src="@drawable/round" />
+            android:src="@drawable/profile" />
 
         <TextView
             style="@style/TextAppearance.MaterialComponents.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Laura smith"
+            android:text="Joel Titus"
             android:textSize="25dp"
             android:textColor="@color/black" />
 
@@ -355,7 +355,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/Card_View9"
+        android:id="@+id/logOut"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         app:cardCornerRadius="5dp"

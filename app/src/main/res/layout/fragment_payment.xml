@@ -58,9 +58,9 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/energy"></ImageView>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -92,9 +92,9 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/internet"></ImageView>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/act"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,9 +126,9 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/mobile"></ImageView>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/smartphone"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,8 +160,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/plane"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -194,8 +194,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/shop"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -228,8 +228,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/ticket"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -262,8 +262,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/lottery"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -296,8 +296,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/water"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -330,8 +330,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/googleplay"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -364,8 +364,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/appstore"></ImageView>
                 <TextView
                     android:layout_width="wrap_content"

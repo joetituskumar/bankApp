@@ -1,12 +1,15 @@
 package com.example.sample1.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.sample1.LoginActivity
 import com.example.sample1.R
-
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_menu.*
 
 
 class MenuFragment : Fragment() {
@@ -22,6 +25,14 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        item_image9.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(context,LoginActivity::class.java))
+            activity?.finishAffinity()
+        }
+    }
 
 }

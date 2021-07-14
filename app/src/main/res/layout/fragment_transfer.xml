@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange"
     tools:context=".fragments.TransferFragment">
 
     <TextView
@@ -324,12 +325,15 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewTransfer"
                 android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/orange">
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/orange">
 
                     <TextView
                         android:id="@+id/textViewtransfer7"
@@ -338,15 +342,17 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
                         android:text="Choose Transaction"
-                        android:textSize="10dp"
+                        android:textSize="15dp"
                         app:layout_constraintStart_toStartOf="parent"></TextView>
 
                     <TextView
                         android:id="@+id/textViewtransfer6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
                         android:text="Transfer Via"
                         android:textColor="#1C1B1B"
+                        android:textSize="22dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/textViewtransfer7"
                         app:layout_constraintTop_toBottomOf="@+id/textViewtransfer7" />
@@ -359,7 +365,7 @@
                         android:text="The Same Bank"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.77"
+                        app:layout_constraintHorizontal_bias="0.86"
                         app:layout_constraintStart_toEndOf="@+id/textViewtransfer6"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -375,6 +381,150 @@
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/accountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/cardViewTransfer"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Account Number"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardViewTransfer"
+                android:layout_marginStart="108dp"
+                android:layout_marginLeft="108dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/accountNumber"
+                android:text="123 456 "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/accountNumber"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Bank"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numbers"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_toRightOf="@+id/bank"
+                android:text="Cy Capital Bank"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bank"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Branch"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/branchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bankName"
+                android:layout_marginStart="197dp"
+                android:layout_marginLeft="150dp"
+                android:layout_toRightOf="@+id/branch"
+                android:text="New York City"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/branch"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Amount"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/amountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/branchName"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="188dp"
+                android:layout_marginLeft="188dp"
+                android:layout_toRightOf="@+id/amount"
+                android:text="$1200"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/amount"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Message"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/messageInside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amountNumber"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/message"
+                android:text="Rental Car"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Fees Transaction"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/feeAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/messageInside"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/fee"
+                android:text="$20"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
         </RelativeLayout>
     </ScrollView>
 

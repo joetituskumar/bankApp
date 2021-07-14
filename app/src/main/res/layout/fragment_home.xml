@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange"
     tools:context=".fragments.HomeFragment">
 
 
@@ -347,22 +348,48 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/horizontalScroll"
+                android:id="@+id/twoButtons">
+
+                <Button
+                    android:id="@+id/paymentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="150dp"
+                    android:layout_marginRight="150dp"
+                    android:background="@color/yellow"
+                    android:text="Payment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Transfer"
+                    android:background="@color/yellow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginLeft="150dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
             <TextView
-            android:id="@+id/horizontalScroll1"
+            android:id="@+id/recentTransaction"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Recent Transaction"
             android:textSize="25dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="9dp"
             android:textColor="@color/black"
             style="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:layout_below="@+id/horizontalScroll"></TextView>
+            android:layout_below="@+id/twoButtons"></TextView>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/horizontalScroll1"
+                android:layout_below="@+id/recentTransaction"
                 android:layout_marginTop="1dp"></androidx.recyclerview.widget.RecyclerView>
         </RelativeLayout>
 
